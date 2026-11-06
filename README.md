@@ -1,5 +1,7 @@
 # Google Ads Transparency Scraper
 
+![Google Ads Transparency Scraper](https://raw.githubusercontent.com/smoldesk/apify-scrapers/main/assets/google-ads/banner.webp)
+
 See every ad a competitor runs on Google Search, YouTube, Shopping, Maps and Play. Ad copy, images, landing pages, countries and dates. No login. Runs on [Apify](https://apify.com/smoldesk/google-ads-transparency-scraper).
 
 ## What you get
