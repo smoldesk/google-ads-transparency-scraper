@@ -64,12 +64,12 @@ Export as JSON, CSV or Excel, or pipe it into Google Sheets, Make, Zapier or n8n
 
 ## Pricing
 
-Pay per result. No monthly fee.
+Pay per result. No monthly fee. Prices drop on paid Apify plans.
 
-| Result | Per 1,000 |
-|---|---|
-| Ad with copy, image, landing page and dates | $1 |
-| Full details add-on (countries, impressions, audience, variations) | +$2 |
+| Result (per 1,000) | Free | Starter | Scale | Business |
+|---|---|---|---|---|
+| Ad with copy, image, landing page and dates | $1.00 | $1.00 | $0.90 | $0.75 |
+| Full details add-on (countries, impressions, audience, variations) | +$2.00 | +$2.00 | +$1.75 | +$1.50 |
 
 Ads skipped by your filters or already seen in monitor mode are not charged.
 
