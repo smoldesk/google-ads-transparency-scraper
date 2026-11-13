@@ -11,8 +11,10 @@ See every ad a competitor runs on Google Search, YouTube, Shopping, Maps and Pla
 - **Creatives**: image URLs, YouTube video ID and URL, and Shopping product title and merchant.
 - **Reach**: first and last shown date, days shown, and every country the ad ran in.
 - **Impressions and audience** for ads shown in the EU and for political ads.
-- **Filters**: country, format (text, image, video), platform, date range, political ads only.
+- **Filters**: country, format (text, image, video), one or more platforms, date range, political ads only.
 - **New ads only** mode for weekly competitor monitoring.
+- **Advertisers mode**: who advertises for a brand or domain, one row per advertiser account with legal name, country, verified badge and ad count.
+- **Account and campaign IDs** (`googleCustomerId`, `adGroupId`) and the advertiser's ad count on every ad.
 
 ## Run it
 
@@ -70,6 +72,7 @@ Pay per result. No monthly fee. Prices drop on paid Apify plans.
 |---|---|---|---|---|
 | Ad with copy, image, landing page and dates | $1.00 | $1.00 | $0.90 | $0.75 |
 | Full details add-on (countries, impressions, audience, variations) | +$2.00 | +$2.00 | +$1.75 | +$1.50 |
+| Advertiser (Advertisers mode) | $2.00 | $2.00 | $1.75 | $1.50 |
 
 Ads skipped by your filters or already seen in monitor mode are not charged.
 
@@ -79,6 +82,7 @@ Ads skipped by your filters or already seen in monitor mode are not charged.
 - Search text ads are mostly stored as a screenshot. You get it in `imageUrl`, but `headline` stays empty.
 - Impressions and audience exist only for EU and political ads. Other countries get first and last shown dates.
 - The Center lists verified advertisers back to about 2020.
+- Account and campaign IDs come from Google's preview script, so ads stored only as an image have none.
 
 ## FAQ
 
@@ -86,7 +90,7 @@ Ads skipped by your filters or already seen in monitor mode are not charged.
 No public one. This reads the same data the Center shows in the browser and returns it as JSON.
 
 **How do I find all ads of a competitor?**
-Put their domain in `domains`. Use `advertisers` for a name, and `allAdvertiserMatches` if several advertisers share it.
+Put their domain in `domains`. Use `advertisers` for a name, and `advertisersPerName` (0 = all) if several advertisers share it. Set `resultType` to `advertisers` to list the accounts first.
 
 **How do I get alerts for new ads?**
 Turn on `onlyNewAds` and schedule the run weekly. Only creatives not seen in earlier runs are returned and charged.
