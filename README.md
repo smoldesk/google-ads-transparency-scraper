@@ -103,4 +103,4 @@ No. Google ads only.
 
 ## More scrapers
 
-Google Ads Transparency is one of 20 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).
+Google Ads Transparency is one of 21 no-login scrapers by Smoldesk Studios. See the full list: [smoldesk/apify-scrapers](https://github.com/smoldesk/apify-scrapers).
